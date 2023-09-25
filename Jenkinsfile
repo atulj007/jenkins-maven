@@ -1,14 +1,6 @@
 pipeline{
-
     agent any
-
-// uncomment the following lines by removing /* and */ to enable
-/*    tools{
-       maven 'Maven 3.6.3' 
-    }
-*/    
-
-    stages{
+ stages{
         stage('Cleaning Stage'){
             steps{
                 sh "mvn clean"
@@ -25,4 +17,4 @@ pipeline{
             }
         }
     }
-
+}
